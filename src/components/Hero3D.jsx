@@ -38,7 +38,7 @@ export default function Hero3D() {
         {/* Left Side Content */}
         <div className="hero-content">
           <div className="hero-badge">
-            <span style={{ fontSize: '1.2rem' }}>✨</span> Fullstack Developer
+            <span style={{ fontSize: '1.2rem' }}>✨</span> Full Stack Developer | React · Spring Boot · SQL
           </div>
 
           <h1 className="hero-title">
@@ -47,12 +47,11 @@ export default function Hero3D() {
           </h1>
 
           <p className="hero-subtitle">
-            I'm a Full Stack Software Engineer with experience in Website, Mobile,
-            and Software development. Check out my projects and skills.
+            I'm a Full Stack Developer skilled in React.js, Spring Boot, REST APIs, and SQL — building scalable web and mobile applications.
           </p>
 
-          <a href="#about" className="hero-cta">
-            Learn more
+          <a href="#projects" className="hero-cta">
+            View My Work
           </a>
         </div>
 
