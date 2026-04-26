@@ -10,7 +10,7 @@ export default function Projects() {
       desc: "A comprehensive platform to manage pet adoptions, built with React, Spring Boot, SQL, and robust REST APIs.",
       tech: ["React", "Spring Boot", "SQL", "REST APIs"],
       demoLink: "https://pet-adoption-demo.vercel.app", // User can update this
-      image: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&q=80&w=800"
+      image: "/petadoption.png"
     },
     {
       id: "gitwisdom",
