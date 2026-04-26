@@ -294,6 +294,28 @@ section {
   color: #d8b4fe;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 4vw;
+    gap: 1rem;
+  }
+  .nav-brand {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+  section {
+    padding: 4rem 5vw;
+  }
+}
+
 /* Cards & Layouts */
 .glass-card {
   background: rgba(20, 20, 30, 0.6);
