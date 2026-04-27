@@ -9,7 +9,14 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-header">
-        <Link to="/" className="nav-brand">
+        <Link 
+          to="/" 
+          className="nav-brand"
+          onClick={() => {
+            setIsOpen(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
           <span>✨</span>G.Ratna <span>Bhushanam</span>
         </Link>
         <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
@@ -18,7 +25,15 @@ export default function Navbar() {
       </div>
 
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+        <Link 
+          to="/" 
+          onClick={() => {
+            setIsOpen(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
+          Home
+        </Link>
         <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
         <a href="/#skills" onClick={() => setIsOpen(false)}>Skills</a>
         <a href="/#projects" onClick={() => setIsOpen(false)}>Projects</a>
