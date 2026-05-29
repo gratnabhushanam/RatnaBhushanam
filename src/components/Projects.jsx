@@ -1,76 +1,75 @@
 import { Link } from 'react-router-dom';
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
+import { FolderGit2, ArrowRight } from 'lucide-react';
 
 export default function Projects() {
-  const projects = [
-    {
-      id: "pet-adoption",
-      title: "Pet Adoption Management System",
-      desc: "A comprehensive platform to manage pet adoptions, built with React, Spring Boot, SQL, and robust REST APIs.",
-      tech: ["React", "Spring Boot", "SQL", "REST APIs"],
-      demoLink: "https://pet-adoption-demo.vercel.app", // User can update this
-      image: "/petadoption.png"
-    },
-    {
-      id: "gitwisdom",
-      title: "GitWisdom (Featured Project)",
-      desc: "GitWisdom is available as both a responsive web app and a mobile app (Android & iOS), sharing a single Express.js REST API backend on Render.",
-      tech: ["Vite", "React", "Express.js", "Node.js", "MongoDB", "Render", "Vercel"],
-      demoLink: "https://gitawisdom.vercel.app",
-      image: "/gitawisdom.png"
-    }
-  ];
-
   return (
     <section id="projects">
       <motion.h2 
         className="section-title"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        Projects
+        Projects Portfolio
       </motion.h2>
 
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
+      <div style={{ maxWidth: '950px', margin: '0 auto' }}>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8 }}
+        >
+          <Tilt 
+            glareEnable={true} 
+            glareMaxOpacity={0.08} 
+            glareColor="var(--accent-cyan)" 
+            glarePosition="all" 
+            scale={1.02} 
+            transitionSpeed={1500}
+            tiltMaxAngleX={4}
+            tiltMaxAngleY={4}
           >
-            <Tilt glareEnable={true} glareMaxOpacity={0.1} glareColor="#e0aaff" glarePosition="all" scale={1.02} transitionSpeed={2500}>
-              <div className="glass-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '1.5rem', border: '1px solid rgba(138, 43, 226, 0.2)' }} 
-                />
-                <h3 className="project-title" style={{ marginTop: 0 }}>{project.title}</h3>
-                <p className="project-desc">{project.desc}</p>
-                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-                  {project.tech.map((t, i) => (
-                    <span key={i} style={{ fontSize: '0.8rem', color: '#d8b4fe', background: 'rgba(138, 43, 226, 0.1)', padding: '2px 8px', borderRadius: '4px' }}>
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <div style={{ display: 'flex', gap: '10px' }}>
-                  <Link to={`/project/${project.id}`} className="btn-outline">
-                    View Details
+            <div className="glass-card" style={{ padding: '3rem' }}>
+              <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                
+                {/* Visual Stack Graphic */}
+                <div style={{ flex: '1 1 350px', display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                  <div className="hero-badge" style={{ marginBottom: 0, width: 'fit-content' }}>
+                    <FolderGit2 size={16} style={{ color: 'var(--accent-cyan)', marginRight: '6px' }} /> 3 Active Repositories
+                  </div>
+                  <h3 style={{ fontSize: '2.1rem', margin: 0, color: 'var(--text-main)', lineHeight: '1.2' }}>Engineering Full Stack Systems</h3>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', margin: 0, lineHeight: '1.6' }}>
+                    Designs engineered using modern state management (React.js), reactive server nodes (Spring Boot, Express.js), secure transaction layers, and database queries.
+                  </p>
+                  <Link to="/projects" className="btn-solid" style={{ width: 'fit-content', padding: '14px 28px', marginTop: '1rem', textDecoration: 'none' }}>
+                    Explore All Projects <ArrowRight size={16} style={{ marginLeft: '4px' }} />
                   </Link>
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="btn-solid">
-                    Live Demo
-                  </a>
                 </div>
+
+                {/* Projects Quick Preview Stack */}
+                <div style={{ flex: '1 1 300px', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <div style={{ background: 'var(--stat-box-bg)', border: '1px solid var(--badge-border)', padding: '1.2rem', borderRadius: '12px' }}>
+                    <h4 style={{ color: 'var(--accent-cyan)', margin: '0 0 0.3rem 0', fontSize: '1.1rem' }}>01. Pet Adoption Management</h4>
+                    <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-muted)' }}>React, Spring Boot, MySQL, REST APIs</p>
+                  </div>
+                  <div style={{ background: 'var(--stat-box-bg)', border: '1px solid var(--badge-border)', padding: '1.2rem', borderRadius: '12px' }}>
+                    <h4 style={{ color: 'var(--accent-cyan)', margin: '0 0 0.3rem 0', fontSize: '1.1rem' }}>02. Gita Wisdom Streaming</h4>
+                    <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-muted)' }}>Vite, React, Express, MongoDB</p>
+                  </div>
+                  <div style={{ background: 'var(--stat-box-bg)', border: '1px solid var(--badge-border)', padding: '1.2rem', borderRadius: '12px' }}>
+                    <h4 style={{ color: 'var(--accent-cyan)', margin: '0 0 0.3rem 0', fontSize: '1.1rem' }}>03. Movie Ticket Booking</h4>
+                    <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-muted)' }}>React, Spring Boot, SQL, Material UI</p>
+                  </div>
+                </div>
+
               </div>
-            </Tilt>
-          </motion.div>
-        ))}
+            </div>
+          </Tilt>
+        </motion.div>
       </div>
     </section>
   );

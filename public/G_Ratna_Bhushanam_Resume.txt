@@ -1,0 +1,36 @@
+G. RATNA BHUSHANAM
+Full Stack Developer
+Email: 2300030195cse2@gmail.com | Phone: +91 8688473906
+LinkedIn: linkedin.com/in/gali-ratna-bhushanam-9a689b34a | GitHub: github.com/gratnabhushanam
+
+SUMMARY
+Passionate and dedicated Full Stack Developer with experience building scalable web applications. Strong foundations in React.js, Spring Boot, REST APIs, and Database Management. Focused on code quality, performance, and responsive UI/UX.
+
+EDUCATION
+KL University - Bachelor of Computer Science and Engineering
+CGPA: 8.51/10.0 (July 2023 - Present)
+
+TECHNICAL SKILLS
+- Programming Languages: Java, Python, C, JavaScript
+- Frontend Technologies: React.js, HTML5, CSS3, JavaScript (ES6+), Material UI
+- Backend Technologies: Spring Boot, Express.js, Node.js
+- Database Management: MySQL, MongoDB, PostgreSQL, SQL
+- Developer Tools: Git, GitHub, Render, Vercel
+
+PROJECTS
+
+1. Pet Adoption Management System
+- Description: A comprehensive full-stack platform designed to connect pets with adopters. Features user authentication, search/filters, adoption request submission, and an admin dashboard.
+- Tech Stack: React, Spring Boot, SQL, REST APIs
+- Live Demo: https://pet-adoption-demo.vercel.app
+
+2. Gita Wisdom Streaming Platform (GitWisdom)
+- Description: A streaming and wisdom platform available on web and mobile. Powered by a single Express.js backend on Render and a Vite + React frontend on Vercel.
+- Tech Stack: Vite, React, Express.js, Node.js, MongoDB, Render, Vercel
+- Live Demo: https://gitawisdom.vercel.app
+
+CERTIFICATIONS
+- AWS Certified Cloud Practitioner (Credly ID: bf444387-8c45-47d2-884c-f161e9dfa2b0)
+- Multicloud Network Associate (Aviatrix)
+- Automation Anywhere Certified Advanced RPA Professional
+- Oracle Certified Associate
