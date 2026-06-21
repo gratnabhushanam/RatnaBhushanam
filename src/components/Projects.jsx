@@ -57,7 +57,7 @@ export default function Projects() {
                     <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-muted)' }}>React, Spring Boot, MySQL, REST APIs</p>
                   </div>
                   <div style={{ background: 'var(--stat-box-bg)', border: '1px solid var(--badge-border)', padding: '1.2rem', borderRadius: '12px' }}>
-                    <h4 style={{ color: 'var(--accent-cyan)', margin: '0 0 0.3rem 0', fontSize: '1.1rem' }}>02. Gita Wisdom Streaming</h4>
+                    <h4 style={{ color: 'var(--accent-cyan)', margin: '0 0 0.3rem 0', fontSize: '1.1rem' }}>02. Omstream Streaming</h4>
                     <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-muted)' }}>Vite, React, Express, MongoDB</p>
                   </div>
                   <div style={{ background: 'var(--stat-box-bg)', border: '1px solid var(--badge-border)', padding: '1.2rem', borderRadius: '12px' }}>

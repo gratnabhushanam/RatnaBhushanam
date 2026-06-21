@@ -27,7 +27,7 @@ export default function ProjectDetail() {
       date: "Spring 2024",
       role: "Full Stack Developer",
       image: "/petadoption.png",
-      demoLink: "https://pet-adoption-demo.vercel.app",
+      demoLink: "https://petadoption1-orpin.vercel.app/",
       githubLink: "https://github.com/gratnabhushanam",
       fullDesc: "This is a comprehensive, three-tier Full Stack application designed to connect homeless pets with loving families. By leveraging a high-performance React client and a robust Spring Boot microservice, the system automates and streamlines animal catalogs, adoption application reviews, background checks, and administrative operations.",
       tech: ["React.js", "Spring Boot", "MySQL", "REST APIs", "Git"],
@@ -39,15 +39,15 @@ export default function ProjectDetail() {
       ],
       architecture: "The application separates concerns cleanly. The client layer is built in React, routing API requests dynamically to a backend Spring Boot controller. Persistency is achieved using Hibernate/Spring Data JPA connected to a relational MySQL schema, optimizing fetch operations and keeping transactional integrity."
     },
-    "gitawisdom": {
-      title: "Gita Wisdom Streaming Platform",
+    "omstream": {
+      title: "Omstream Streaming Platform",
       category: "Audio Streaming & Content Web App",
       date: "Winter 2024",
       role: "Lead Full Stack Developer",
       image: "/gitawisdom.png",
-      demoLink: "https://gitawisdom.vercel.app",
+      demoLink: "https://omstream.vercel.app/",
       githubLink: "https://github.com/gratnabhushanam",
-      fullDesc: "Gita Wisdom is a high-quality streaming application engineered to deliver translation, commentary, and audios of spiritual teachings. The architecture relies on an Express.js backend hosted on Render, servicing a fast React frontend hosted on Vercel. Media collections, notes, and user configurations are stored and queries in MongoDB.",
+      fullDesc: "Omstream is a high-quality streaming application engineered to deliver translation, commentary, and audios of spiritual teachings. The architecture relies on an Express.js backend hosted on Render, servicing a fast React frontend hosted on Vercel. Media collections, notes, and user configurations are stored and queries in MongoDB.",
       tech: ["Vite", "React.js", "Express.js", "MongoDB", "Render", "Vercel"],
       features: [
         "Optimized audio streaming engine with playlist selectors, seek bars, and playback speed adjustments.",

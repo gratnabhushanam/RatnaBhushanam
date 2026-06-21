@@ -17,16 +17,16 @@ export default function ProjectsGrid() {
       title: "Pet Adoption Management System",
       desc: "A full-stack application designed to seamlessly connect pets in need with loving families. Features secure user accounts, advanced pet catalog filtering, adoption request management, and an admin dashboard.",
       tech: ["React.js", "Spring Boot", "MySQL", "REST APIs", "Git"],
-      demoLink: "https://pet-adoption-demo.vercel.app",
+      demoLink: "https://petadoption1-orpin.vercel.app/",
       githubLink: "https://github.com/gratnabhushanam",
       image: "/petadoption.png"
     },
     {
-      id: "gitawisdom",
-      title: "Gita Wisdom Streaming Platform",
+      id: "omstream",
+      title: "Omstream Streaming Platform",
       desc: "A rich digital streaming platform delivering spiritual teachings. The application uses React for a smooth client interface and Express.js on Render for api delivery, storing media and text references in MongoDB.",
       tech: ["Vite", "React.js", "Express.js", "MongoDB", "Render", "Vercel"],
-      demoLink: "https://gitawisdom.vercel.app",
+      demoLink: "https://omstream.vercel.app",
       githubLink: "https://github.com/gratnabhushanam",
       image: "/gitawisdom.png"
     },
@@ -50,12 +50,12 @@ export default function ProjectsGrid() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.1 }}
         >
-          <Tilt 
-            glareEnable={true} 
-            glareMaxOpacity={0.08} 
-            glareColor="var(--accent-cyan)" 
-            glarePosition="all" 
-            scale={1.03} 
+          <Tilt
+            glareEnable={true}
+            glareMaxOpacity={0.08}
+            glareColor="var(--accent-cyan)"
+            glarePosition="all"
+            scale={1.03}
             transitionSpeed={1500}
             tiltMaxAngleX={6}
             tiltMaxAngleY={6}
@@ -63,10 +63,10 @@ export default function ProjectsGrid() {
           >
             <div className="glass-card project-card-3d">
               <div className="project-img-wrapper">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="project-img" 
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-img"
                 />
                 <div className="project-overlay">
                   <span style={{ color: '#fff', fontSize: '0.9rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '5px' }}>
@@ -77,7 +77,7 @@ export default function ProjectsGrid() {
 
               <h3 className="project-title">{project.title}</h3>
               <p className="project-desc">{project.desc}</p>
-              
+
               <div className="project-tech-list">
                 {project.tech.map((tech, i) => (
                   <span key={i} className="tech-tag">
@@ -90,20 +90,20 @@ export default function ProjectsGrid() {
                 <Link to={`/project/${project.id}`} className="btn-outline">
                   <Info size={16} /> Details
                 </Link>
-                <a 
-                  href={project.githubLink} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-outline"
                   style={{ padding: '10px' }}
                   aria-label="GitHub Repository"
                 >
                   <GithubIcon size={18} />
                 </a>
-                <a 
-                  href={project.demoLink} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-solid"
                   style={{ marginLeft: 'auto' }}
                 >
